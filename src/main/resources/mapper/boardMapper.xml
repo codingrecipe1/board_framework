@@ -19,4 +19,8 @@
     <delete id="delete" parameterType="Long">
         delete from board_table where id=#{id}
     </delete>
+    <update id="update" parameterType="board">
+        update board_table set boardTitle=#{boardTitle}, boardContents=#{boardContents}
+        where id=#{id}
+    </update>
 </mapper>
