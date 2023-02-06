@@ -37,7 +37,8 @@
 </body>
 <script>
     const listFn = () => {
-        location.href = "/board/";
+        const page = '${page}';
+        location.href = "/board/paging?page=" + page;
     }
     const updateFn = () => {
         const id = '${board.id}';
